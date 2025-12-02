@@ -3,20 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Titolo della pagina -->
-    <title>Fake4Real</title>
 
-    <!-- Meta description per Google -->
+    <title>Fake4Real</title>
     <meta name="description" content="Fake4Real – Official micro-site. Fake4Real 4 Fake4Ralph.">
 
-    <!-- Meta OpenGraph per social preview -->
     <meta property="og:title" content="Fake4Real">
     <meta property="og:description" content="Fake4Real – Official micro-site.">
     <meta property="og:image" content="F4Ralph.jpg">
     <meta property="og:type" content="website">
 
-    <!-- Stile base -->
     <style>
         body {
             margin: 0;
@@ -29,10 +24,12 @@
             align-items: center;
             font-family: 'Courier New', Courier, monospace;
             color: white;
+            text-align: center;
         }
 
         img {
-            max-width: 70vw;
+            width: 100%;
+            max-width: 550px;      /* Limite massimo su desktop */
             height: auto;
             display: block;
         }
@@ -43,14 +40,18 @@
             opacity: 0.8;
             letter-spacing: 1px;
         }
+
+        /* Mobile: immagine più grande in proporzione */
+        @media (max-width: 600px) {
+            img {
+                max-width: 85%;     /* Così appare più grande su smartphone */
+            }
+        }
     </style>
 </head>
 
 <body>
-    <!-- Immagine centrale -->
-    <img src="F4Ralph.png" alt="Fake4Real">
-
-    <!-- Caption sotto l'immagine -->
+    <img src="F4Ralph.jpg" alt="Fake4Real">
     <div class="caption">Fake4Real 4 Fake4Ralph</div>
 </body>
 </html>
